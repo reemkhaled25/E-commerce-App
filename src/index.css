@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(assets/images/Algopix-54.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.active{
+    color:#16a34a
+}
+.icon {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon:hover {
+    color: #18181b;
+    border: 1px solid #18181b;
+    background-color: white;
+}
+
+.card button{
+
+    transform: translateY(150%);
+    transition: all .5s;
+}
+.btn{
+    transition: all .5s;
+}
+.card button:hover ,.btn:hover{
+    background-color: rgb(34, 197, 94);
+}
+
+.card {
+    transition: all .5s;
+}
+
+.card:hover {
+    -webkit-box-shadow: 2px 1px 5px 6px rgba(22, 163, 74, 0.27);
+    -moz-box-shadow: 2px 1px 5px 6px rgba(22, 163, 74, 0.27);
+    box-shadow: 2px 1px 5px 6px rgba(22, 163, 74, 0.27);
+}
+
+.card:hover button {
+
+    transform: translateY(0%);
+}
+.search:focus{
+    border:1px solid #16a34a;
+    -webkit-box-shadow: 2px 1px 5px 6px rgba(22, 163, 74, 0.27);
+    -moz-box-shadow: 2px 1px 5px 6px rgba(22, 163, 74, 0.27);
+    box-shadow: 2px 1px 5px 6px rgba(22, 163, 74, 0.27);
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: animloader 1s linear infinite;
+  }
+  
+  @keyframes animloader {
+    0% {
+      box-shadow: -72px 0 #FFF inset;
+    }
+    100% {
+      box-shadow: 48px 0 #FFF inset;
+    }
+  }
+  .cart-count{
+    position: absolute;
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #16a34a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:-15px;
+    right:10px;
+    color: white;
+  }
+      
